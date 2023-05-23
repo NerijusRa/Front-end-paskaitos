@@ -34,6 +34,6 @@ console.log('Hello, ' + vardas + ' ' + pavarde + ".")
 
 console.log(vardas + ' ' + pavarde + ' (amzius ' + amzius + ' m.), ' + 'asmens kodas: ' + asmensKodas + ', gyvenamasis miestas: ' + miestas + '.')
 
-console.log(`${vardas} ${pavarde}  (amzius ${amzius} m.), asmens kodas: ${asmensKodas}, gyvenamasis miestas: ${miestas}.`)
+console.log(`${vardas} ${pavarde} (amzius ${amzius} m.), asmens kodas: ${asmensKodas}, gyvenamasis miestas: ${miestas}.`)
 
 
