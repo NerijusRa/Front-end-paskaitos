@@ -1,0 +1,181 @@
+.container {background-color: lightgrey;
+height: 600px;
+width: 600px;
+display: flex;
+margin-bottom: 30px;}
+
+.container-1 {display: flex; flex-wrap: wrap;}
+
+.blue {background-color: blue;}
+
+.green {background-color: green;}
+
+.red {background-color: red;}
+
+.orange {background-color: orange;}
+
+.pink {background-color: pink;}
+
+.purple {background-color: purple;}
+
+.brown {background-color: brown;}
+
+/* PIRMAS METODAS */
+
+/* .container-1 .child:nth-child(1) {height: 200px; width: 200px;}
+
+.container-1 .child:nth-child(2) {height: 200px; width: 400px}
+
+.container-1 .child:nth-child(3) {height: 200px; width: 400px;}
+
+.container-1 .child:nth-child(4) {height: 200px; width: 200px;}
+
+.container-1 .child:nth-child(5) {height: 200px;width: 200px;}
+
+.container-1 .child:nth-child(6) {height: 200px; width: 400px;} */
+
+/* ANTRAS METODAS */
+
+/* .container-1 .child:nth-child(1),
+.container-1 .child:nth-child(4),
+.container-1 .child:nth-child(5) {height: 200px;width: 200px;}
+.container-1 .child:nth-child(2),
+.container-1 .child:nth-child(3),
+.container-1 .child:nth-child(6) {height: 200px;width: 400px;} */
+
+/* TRECIAS */
+
+/* .container-1 .child {  height: 200px;  width: 200px;}
+.container-1 .child:nth-child(2),
+.container-1 .child:nth-child(3),
+.container-1 .child:nth-child(6) {  width: 400px;} */
+
+/* KETVIRTAS metodas */
+
+.container-1 .child {height: 200px; width: 200px;}
+
+.container-1 .child:nth-of-type(4n+2),
+.container-1 .child:nth-of-type(4n+3) {width: 400px;}
+
+/* 3 */
+.container-3 { display: flex; flex-wrap: wrap; } .container-3 .child { width: 200px; height: 200px; } 
+.container-3 .child:nth-child(1) { width: 400px; height: 400px; } 
+.container-3 .inner-container { height: 400px; width: 200px; } 
+.container-3 .inner-container .inner-child {height: 200px;}
+
+/* 5 */
+
+.container-5 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-5 .child {
+    height: 200px;
+    width: 200px;
+  }
+  .container-5 .child:nth-child(2),
+  .container-5 .child:nth-child(6) {
+    width: 400px;
+  }
+  .container-5 .inner-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-5 .inner-container .inner-child {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* 2 */
+
+  .container-2 {display: flex; flex-wrap: wrap; flex-direction: column;}
+
+  .container-2 .child {height: 200px; width: 200px;}
+
+  .container-2 .child:nth-of-type(4n+2),
+  .container-2 .child:nth-of-type(4n+3) {height: 400px;}
+
+   /* 12*/
+
+.container-12 {display: flex;}
+
+.container-12 .child {height: 600px; width: 200px;}
+
+/* 13 */
+
+.container-13{display: flex; flex-direction: column;}
+
+.container-13 .child {height: 200px; width: 600px;}
+
+/* 20 */
+
+.container-20 {display: flex; flex-wrap: wrap;}
+
+.container-20 .child {height: 200px; width: 150px;}
+
+/* 15 */
+
+.container-15 {display: flex; flex-wrap: wrap;}
+
+.container-15 .odd-child {height: 150px; width: 200px;}
+.container-15 .child {height: 150px; width: 150px;}
+
+/* 4 */
+.container-4 {display: flex; flex-wrap: wrap;}
+
+.container-4 .small-inner-container {height: 150px;display: flex;}
+
+  .container-4 .small-inner-container .inner-child:nth-child(1),
+  .container-4 .small-inner-container .inner-child:nth-child(3) {
+    width: 240px;
+  }
+
+  .container-4 .small-inner-container .inner-child:nth-child(2) {
+    width: 120px;
+  }
+  .container-4 .large-inner-container {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .container-4 .large-inner-container .inner-child {
+    height: 150px;
+    width: 150px;
+  }
+  .container-4 .large-inner-container .inner-child:nth-child(3) {
+    width: 300px;
+    height: 300px;
+  }
+  
+  /* 18 */
+
+  .container-18 {display: flex; flex-wrap: wrap; flex-direction: column;}
+.container-18 .inner-child {width: 200px; height: 200px;}
+
+.container-18 .middle-child {width: 200px; height: 300px;}
+
+/* 11 */
+
+.container-11 {display: flex; flex-wrap: wrap;}
+
+.container-11 .big-child {height: 500px;width: 600px;}
+.container-11 .child {width: 120px;height: 100px;}
+
+/* 16 */
+
+.container-16 {display: flex;flex-wrap: wrap;}
+
+.container-16 .big-child {width: 600px; height: 200px;}
+
+.container-16 .bottom-left {display:flex;flex-wrap: wrap;width: 150px;height: 200px;}
+.container-16 .bottom-left .child:nth-child(1) {width: 150px;}
+
+.container-16 .bottom-left-small {display:flex;flex-wrap: wrap;width: 150px;height: 200px;}
+.container-16 .bottom-left-small .child {width: 150px;}
+
+.container-16 .bottom-right {display:flex;flex-wrap: wrap;width: 150px;height: 200px;}
+.container-16 .bottom-right .child:nth-child(1) {width: 150px;}
+
+.container-16 .bottom-right-small {display:flex;flex-wrap: wrap;width: 150px;height: 200px;}
+.container-16 .bottom-right-small .child {width: 150px;}

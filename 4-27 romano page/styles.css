@@ -1,0 +1,144 @@
+*, *::before, *::after {box-sizing: border-box;}
+
+.body {margin: 0;}
+
+ul {
+    display: block; 
+    list-style-type: none; 
+    padding-left: 0;}
+
+.container {
+    max-width: 1300px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-left: 10px; 
+    padding-right: 10px;}
+
+.content {
+    /* display: flex;  */
+    align-items: center; 
+    column-gap: 30px;  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.shops-wrapper {
+    /* width: 50%; */
+}
+
+.shops-list {
+    /* display: flex; 
+    flex-wrap: wrap;  */
+    gap: 15px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} 
+
+.shop-item {
+    /* width: calc((100% - 15px) / 2); */
+    padding: 15px; 
+    box-shadow:0px 2px 5px 1px rgba(0, 0, 0, 0.1);}
+
+.contacts-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 700;
+  }
+
+.contact-list a {
+    text-decoration: none; 
+    font-weight: 400;}
+
+.map-wrapper {
+    display: flex; 
+    /* width: 50%; */
+}
+
+.map-wrapper iframe {width: 100%;}
+
+.contact-item {font-weight: bold;}
+
+/* Media flex */
+/* @media (max-width: 1000px) {
+    .shops-wrapper {
+      width: 70%;
+    }
+  }
+  @media (max-width: 800px) {
+    .shops-wrapper {
+      width: 50%;
+    }
+    .shops-list {
+      flex-direction: column;
+    }
+    .shop-item {
+      width: 100%;
+    }
+  }
+  @media (max-width: 600px) {
+    .content {
+      flex-direction: column-reverse;
+    }
+    .shops-wrapper {
+      width: 100%;
+    }
+    .map-wrapper {
+      width: 100%;
+    }
+    .shops-list {
+      flex-direction: row;
+    }
+    .shop-item {
+      width: calc((100% - 15px) / 2);
+    }
+  }
+
+  @media (max-width: 400px) {
+    .content {
+      flex-direction: column-reverse;
+    }
+    .shops-wrapper {
+      width: 100%;
+    }
+    .map-wrapper {
+      width: 100%;
+    }
+    .shops-list {
+      flex-direction: column;
+    }
+    .shop-item {
+      width: 100%;
+    }
+  } */
+
+  /* media grid  */
+
+  @media(max-width:1000px){
+    .content {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+@media(max-width:800px){
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+    .shops-list {
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:600px){
+    .content {
+        grid-template-columns: 1fr;
+    }
+    .map-wrapper{
+        grid-row-start: 1;
+    }
+    .shops-list {
+        grid-template-columns: 1fr 1fr;
+    }    
+}
+@media(max-width:400px){
+    .shops-list {
+        grid-template-columns: 1fr;
+    }  
+}

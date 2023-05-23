@@ -1,0 +1,140 @@
+body {background: #ffffff;
+font-family:'arial'}
+
+.header {margin-bottom: 20px;}
+
+h1 {color: burlywood;}
+
+p {margin-bottom: 40px;text-align: center;}
+
+span {width: 100%;
+display: flex;
+justify-content: center;}
+
+.post {background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 600px;
+    min-width: 250px;
+    position: relative;}
+
+.post:hover {box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.1);}
+
+.post h2 {margin-top: 0; 
+    background: burlywood;
+    text-align: center;
+border-radius: 3px;
+transition: 1s ease-out;}
+.post:hover h2 {color: white; transition-duration: 1s; transition: 1s ease-out;}
+
+p:before {content: '→'; 
+    font-size: 15px;
+    margin-right: 15px;}
+
+a {padding: 14px; 
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 700;
+        background-color: burlywood; 
+        border-radius: 8px;
+        border: 2px;
+        color: white;
+        border-color: burlywood;
+        border-style: solid;
+        cursor: pointer;}
+        a:hover {background: white;color: burlywood; transition-duration: 0.4s;}
+        
+        .nereikia {padding: 0%;
+        text-decoration: none;
+        text-transform: none;
+        background: none;
+        color: blue; 
+        text-decoration: underline;
+        border: 0px;
+    font-weight: normal;}
+
+.nepermatomas {padding: 14px; 
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: burlywood; 
+    border-radius: 8px;
+    color: white;
+    border-color: burlywood;
+    border-style: solid;
+    cursor: pointer;
+    display: inline-block;
+transition: 1s ease-out;}
+    .nepermatomas:hover {background: white;color: burlywood; transition-duration: 0.4s; transition: 1s ease-out;}
+
+    .nepermatomas2 {padding: 14px; 
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 700;
+        background-color: chocolate; 
+        border-radius: 8px;
+        color: white;
+        border-color: chocolate;
+        border-style: solid;
+        cursor: pointer;
+        display: inline-block;
+    margin-bottom: 5px;transition: 1s ease-out;}
+        .nepermatomas2:hover {background: white;color: chocolate; transition-duration: 0.4s;transition: 1s ease-out;}
+
+        .nepermatomas3 {padding: 14px; 
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 700;
+            background-color:cadetblue; 
+            border-radius: 8px;
+            color: white;
+            border-color: cadetblue;
+            border-style: solid;
+            cursor: pointer;
+            display: inline-block;transition: 1s ease-out;}
+            .nepermatomas3:hover {background: white;color: cadetblue; transition: 1s ease-out;}
+
+.permatomas {padding: 14px; 
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 700;
+        background-color: white; 
+        border-radius: 8px;
+        color: burlywood;
+        border-color: burlywood;
+        border-style: solid;
+        cursor: pointer;
+        display: inline-block;
+        margin-bottom: 5px;transition: 1s ease-out;}
+        .permatomas:hover {background: burlywood;color: white; transition: 1s ease-out;}
+
+.permatomas2 {padding: 14px; 
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 700;
+            background-color: white; 
+            border-radius: 8px;
+            color: chocolate;
+            border-color: chocolate;
+            border-style: solid;
+            cursor: pointer;
+            display: inline-block;transition: 1s ease-out;}
+            .permatomas2:hover {background: chocolate;color: white; transition: 1s ease-out;}
+
+            .permatomas3 {padding: 14px; 
+                text-transform: uppercase;
+                font-size: 15px;
+                font-weight: 700;
+                background-color: white; 
+                border-radius: 8px;
+                color: cadetblue;
+                border-color: cadetblue;
+                border-style: solid;
+                cursor: pointer;
+                display: inline-block;transition: 1s ease-out;}
+                .permatomas3:hover {background: cadetblue;color: white; transition: 1s ease-out;}

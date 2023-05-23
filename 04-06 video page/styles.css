@@ -1,0 +1,36 @@
+body {
+    background: #fff linear-gradient(to bottom, #3f567c, #b5ccc6) no-repeat;
+    font-family: Open Sans, sans-serif;
+  }
+
+  menu {padding-left: 0;}
+
+  a {text-decoration: none;}
+
+  .window {
+    margin: auto;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  .window .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background: #24282c;
+    transition-duration: 0.3s;
+    color: #ddd;
+  }
+  .separator {
+    border-top: 1px solid #111111;
+    border-bottom: 1px solid #353535;
+    margin: 20px;
+  }
+  .logo {
+    padding-left: 10px;
+  }
+  

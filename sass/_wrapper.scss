@@ -1,0 +1,51 @@
+@use 'variables';
+
+.wrapper {
+  padding: variables.$spacing-3;
+  h2 {
+    font-size: 40px;
+
+    &.color-red {
+      color: variables.$color-red;
+      cursor: pointer;
+      transition: color 0.3s ease-in;
+    }
+    &.color-red:hover {
+      color: variables.$color-green;
+    }
+  }
+  &.full-width {
+    width: 100%;
+  }
+  &.half-width {
+    width: 50%;
+  }
+  &.bg-dark {
+    background-color: rgb(39, 37, 37);
+  }
+  //   p:not(.empty)::before {
+  //     content: "-";
+  //     color: $color-red;
+  //   }
+  //   p:first-of-type {
+  //     font-size: 1.5em;
+  //   }
+
+  p {
+    &:first-of-type {
+      font-size: 1.5em;
+    }
+    &:not(.empty)::before {
+      content: "-";
+      color: variables.$color-red;
+    }
+
+    // &::before {
+    //   content: "-";
+    //   color: $color-red;
+    // }
+    // &.empty::before {
+    //   content: none;
+    // }
+  }
+}

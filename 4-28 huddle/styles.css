@@ -1,0 +1,89 @@
+*, *::before, *::after {box-sizing: border-box;}
+
+body {margin: 0; font-family: 'Open Sans', sans-serif;}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.top-content {background-color:hsl(193, 100%, 96%);}
+
+.container {
+    max-width: 1440px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-left: 15px; 
+    padding-right: 15px;
+    }
+
+/* headerio dalys */
+
+
+.header {width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;}
+
+.try-button {
+    padding:10px; 
+    border-radius: 20px; 
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1); 
+    text-decoration: none; 
+    font-size: 12px; 
+    color: hsl(192, 100%, 9%); 
+    width: 182px;
+    height: 39px; 
+    text-align: center; 
+    background-color: white;}
+.try-button:hover {color: hsl(208, 11%, 55%)}
+
+/* virsutine dalis */
+.main-intro {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+    font-family: 'Poppins', sans-serif;padding: 50px 0;}
+
+.intro-text {margin-top: auto; margin-bottom: auto;}
+
+.intro-text p {font-size: 14px;}
+
+.intro-button {
+    padding:10px; 
+    border-radius: 20px; 
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1); 
+    text-decoration: none; 
+    font-size: 12px; 
+    background-color: hsl(322, 100%, 66%);
+    color: white; 
+    width: 240px;
+    height: 39px; 
+    text-align: center; display: block;}
+.intro-button:hover {;}
+
+/* main content */
+
+.main-content {
+    display: grid; 
+    row-gap: 30px;
+margin-top: 100px; margin-bottom: 100px;}
+
+.post {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    column-gap: 30px; 
+    box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.1); 
+    margin-top: auto; 
+    margin-bottom: auto; }
+.text-wrapper h3 {font-family: 'Poppins', sans-serif;; font-weight: 600;}
+.main-post {
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400;
+    color: hsl(208, 11%, 55%)}
+.text-wrapper {padding: 50px;}
+
+/* Footer */
+
+.footer {
+    background-color: hsl(192, 100%, 9%); 
+    color: white; 
+    padding: 35px;}
