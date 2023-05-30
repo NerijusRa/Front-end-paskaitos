@@ -202,3 +202,101 @@ switch (streetLight) {
   default:
     console.log("Sugedo :(");
 }
+
+let grade = 7;
+switch (grade) {
+  case 1:
+  case 2:
+  case 3:
+    console.log("Labai blogai");
+    break;
+  case 4:
+    console.log("Blogai");
+    break;
+  case 5:
+  case 6:
+    console.log("Vidutiniskai");
+    break;
+  case 7:
+  case 8:
+    console.log("Gerai");
+    break;
+  case 9:
+  case 10:
+    console.log("Labai gerai");
+    break;
+  default:
+    console.log("Įveskite skaičių nuo 1 iki 5");
+    break;
+}
+
+// Pasisveikinimas
+// 1. Jeigu vartotojas prisijungęs (true/false), tai prie pasisveikinimo reikia prirašyti jo vardą, pvz. „Good Morning, Tom.".
+// 2. Jeigu vartotojas nėra prisijungęs, tai išvesti tik tekstą „Good Morning.".
+// 3. Priklausomai nuo paros laiko, pasisveikinimas turėtų būti skirtingas:
+// 3.1. 5-12 val. „Good Morning"
+// 3.2. 13-18 val. „Good Afternoon"
+// 3.3. 19-4 val. „Good Evening"
+// 3.4. Jeigu įrašytas blogas laikas, tai turi pasisveikinti "Hello"
+// 4. Jeigu vartotojas yra ir prisijungęs, ir šiandien yra jo gimtadienis, tai prie pasisveikinimo dar turi būti parašytas ir pasveikinimas, pvz.: „Good Morning, Tom and have a great birthday!"
+
+// PIRMAS BUDAS
+// let isLoggedIn = true
+// let personName = 'Tom'
+// let time = 20
+// let isBirthday = true
+
+// if (time >= 5 && time < 13) {
+//     if (isLoggedIn && isBirthday) {
+//         console.log('Good Morning, ' + personName + ' and have a great birthday!')
+//     } else {
+//         console.log("Good Morning");
+//     }
+
+// } else if (time >= 13 && time < 19) {
+//      if (isLoggedIn && isBirthday) {
+//        console.log(
+//          "Good Afternoon, " + personName + " and have a great birthday!"
+//        );
+//      } else {
+//          console.log("Good Afternoon");
+//      }
+// } else if (time >= 19 && time < 24 || time >=0 && time <5) {
+//    if (isLoggedIn && isBirthday) {
+//      console.log(
+//        "Good Evening, " + personName + " and have a great birthday!"
+//      );
+//    } else {
+//      console.log("Good Evening");
+//    }
+// }
+
+// ANTRAS BUDAS
+let isLoggedIn = true;
+let personName = "Tom";
+let time = 20;
+let isBirthday = true;
+
+let greetingText = "";
+let nameText = "";
+let birthdayText = "";
+
+if (time >= 5 && time < 13) {
+  greetingText = "Good Morning";
+} else if (time >= 13 && time < 19) {
+  greetingText = "Good Afternoon";
+} else if ((time >= 19 && time < 24) || (time >= 0 && time < 5)) {
+  greetingText = "Good Evening";
+} else {
+  greetingText = "Hello";
+}
+
+if (isLoggedIn && personName != "") {
+  nameText = ", " + personName;
+}
+
+if (isBirthday) {
+  birthdayText = " and have a great birthday!";
+}
+
+console.log(greetingText + nameText + birthdayText);
