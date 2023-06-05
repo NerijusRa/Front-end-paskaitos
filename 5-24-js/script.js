@@ -29,14 +29,14 @@ if (vardas.length > 6) {
   console.log("ilgas vardas");
 }
 
-const age = 28;
-if (age > 100 || age < 0) {
-  console.log("Invalid age");
-} else if (age < 18) {
-  console.log("Child");
-} else {
-  console.log("Adult");
-}
+// const age = 28;
+// if (age > 100 || age < 0) {
+//   console.log("Invalid age");
+// } else if (age < 18) {
+//   console.log("Child");
+// } else {
+//   console.log("Adult");
+// }
 
 const car = "BMW";
 if (
@@ -300,3 +300,115 @@ if (isBirthday) {
 }
 
 console.log(greetingText + nameText + birthdayText);
+
+let day = 1;
+
+switch (day) {
+  case 4:
+    console.log("Mazasis penktadienis");
+  case 1:
+  case 2:
+  case 3:
+  case 5:
+    console.log("Darbo diena");
+    break;
+  case 6:
+  case 7:
+    console.log("Savaitgalis");
+    break;
+  default:
+    console.log("Neteisingai ivesta diena");
+    break;
+}
+console.groupEnd();
+
+// let age = 18;
+
+// if (age < 0) {
+//   console.log("Įvestas amžius yra per mažas. Turi būti teigiamas skaičius.");
+// } else if (age < 6) {
+//   console.log("Į mokyklą neina");
+// } else if (age < 7) {
+//   console.log("Į mokyklą tikriausiai neina, tačiau gali būti ir pirmokas.");
+// } else if (age < 10) {
+//   console.log("Pradinukas");
+// } else if (age < 11) {
+//   console.log("Tikriausiai mokosi pradinėje, tačiau gali būti ir penktokas.");
+// } else if (age < 14) {
+//   console.log("Pagrindinė");
+// } else if (age < 15) {
+//   console.log(
+//     "Tikriausiai mokosi pagrindinėje, tačiau gali būti ir devintokas."
+//   );
+// } else if (age < 18) {
+//   console.log("Gimnazija");
+// } else if (age < 19) {
+//   console.log(
+//     "Tikriausiai mokosi gimnazijoje, tačiau mokyklą gali būti ir baigęs."
+//   );
+// } else {
+//   console.log("Įvestas amžius per didelis");
+// }
+let age = 45;
+
+switch (age) {
+  case 0:
+  case 1:
+  case 2:
+  case 3:
+  case 4:
+  case 5:
+    console.log("Į mokyklą neina");
+    break;
+  case 6:
+    console.log("Į mokyklą tikriausiai neina, tačiau gali būti ir pirmokas.");
+    break;
+  case 7:
+  case 8:
+  case 9:
+    console.log("Pradinukas");
+    break;
+  case 10:
+    console.log("Tikriausiai mokosi pradinėje, tačiau gali būti ir penktokas.");
+    break;
+  case 11:
+  case 12:
+  case 13:
+    console.log("Pagrindinė");
+    break;
+  case 14:
+    console.log(
+      "Tikriausiai mokosi pagrindinėje, tačiau gali būti ir devintokas."
+    );
+    break;
+  case 15:
+  case 16:
+  case 17:
+    console.log("Gimnazija");
+    break;
+  case 18:
+    console.log(
+      "Tikriausiai mokosi gimnazijoje, tačiau mokyklą gali būti ir baigęs."
+    );
+    break;
+  case 19:
+    console.log("Mokyklą baigė.");
+    break;
+  default:
+    console.log("Arba paliktas daug kartu antrais metais, arba jau studentas");
+}
+
+for (let i = 1; i <= 350; i++) {
+  let output = "";
+
+  if (i % 3 === 0) output += "Fizz";
+  if (i % 5 === 0) output += "Buzz";
+  if (i % 7 === 0) output += "Biff";
+  if (i % 9 === 0) output += "Fuzz";
+  if (i % 11 === 0) output += "Bizz";
+  if (i % 13 === 0) output += "Buff";
+
+  if (!output) output = i;
+
+  console.log(output);
+}
