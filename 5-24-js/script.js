@@ -1,3 +1,5 @@
+console.groupCollapsed("JS basics");
+
 // let legalAge = 20
 
 // if (legalAge === 20) {
@@ -349,9 +351,49 @@ console.groupEnd();
 // } else {
 //   console.log("Įvestas amžius per didelis");
 // }
-let age = 45;
 
-switch (age) {
+let pAge = 13;
+// sustoja kai verte yra true
+switch (true) {
+  case pAge < 0:
+    console.log("Įvestas amžius yra per mažas. Turi būti teigiamas skaičius.");
+    break;
+  case pAge < 6:
+    console.log("Į mokyklą neina");
+    break;
+  case pAge < 7:
+    console.log("Į mokyklą tikriausiai neina, tačiau gali būti ir pirmokas.");
+    break;
+  case pAge < 10:
+    console.log("Pradinukas");
+    break;
+  case pAge < 11:
+    console.log("Tikriausiai mokosi pradinėje, tačiau gali būti ir penktokas.");
+    break;
+  case pAge < 14:
+    console.log("Pagrindinė");
+    break;
+  case pAge < 15:
+    console.log(
+      "Tikriausiai mokosi pagrindinėje, tačiau gali būti ir devintokas."
+    );
+    break;
+  case pAge < 18:
+    console.log("Gimnazija");
+    break;
+  case pAge < 18:
+    console.log("Gimnazija");
+    break;
+  case pAge < 19:
+    console.log(
+      "Tikriausiai mokosi gimnazijoje, tačiau mokyklą gali būti ir baigęs."
+    );
+    break;
+  default:
+    console.log("Įvestas amžius per didelis");
+}
+// Sustoja kai randa tinkama reiksme.
+switch (pAge) {
   case 0:
   case 1:
   case 2:
@@ -398,6 +440,115 @@ switch (age) {
     console.log("Arba paliktas daug kartu antrais metais, arba jau studentas");
 }
 
+console.groupCollapsed("Pre Loop");
+
+// console.log('- ' + 1 + '!!!');
+// console.log('- ' + 2 + '!!!');
+// console.log('- ' + 3 + '!!!');
+// console.log('- ' + 4 + '!!!');
+// console.log('- ' + 5 + '!!!');
+// console.log('- ' + 6 + '!!!');
+// console.log('- ' + 7 + '!!!');
+// console.log('- ' + 8 + '!!!');
+// console.log('- ' + 9 + '!!!');
+// console.log('- ' + 10 + '!!!');
+// console.log('- ' + 11 + '!!!');
+// console.log('- ' + 12 + '!!!');
+// console.log('- ' + 13 + '!!!');
+// console.log('- ' + 14 + '!!!');
+// console.log('- ' + 15 + '!!!');
+// console.log('- ' + 16 + '!!!');
+// console.log('- ' + 17 + '!!!');
+// console.log('- ' + 18 + '!!!');
+// console.log('- ' + 19 + '!!!');
+// console.log('- ' + 20 + '!!!');
+
+let num = 5;
+console.log(num);
+console.log(num + 1);
+console.log(num);
+
+num = 6;
+console.log(num);
+
+// Sudėtis
+num = num + 1;
+console.log(num);
+
+num = num + 2;
+console.log(num);
+
+num += 1;
+console.log(num);
+
+num += 2;
+console.log(num);
+
+num++;
+console.log(num);
+
+// Atimtis
+num = num - 1;
+console.log(num);
+
+num = num - 2;
+console.log(num);
+
+num -= 1;
+console.log(num);
+
+num -= 2;
+console.log(num);
+
+num--;
+console.log(num);
+
+// Daugyba
+num = num * 2;
+console.log(num);
+
+num *= 2;
+console.log(num);
+
+// Dalyba
+num = num / 2;
+console.log(num);
+
+num /= 2;
+console.log(num);
+
+// String
+let str = "Labas";
+console.log(str);
+
+str = str + " vakaras";
+console.log(str);
+
+str += ".";
+console.log(str);
+
+console.groupEnd();
+
+// FOR CIKLAS (LOOP):
+// 1. Iniciavimo žodelis - for
+// 2. Paprasti skliaustai - ()
+// 2.1. Sukuriamas kintamasis (dažniausiai jo pavadinimas yra i)
+// 2.2. Sąlyga
+// 2.3. Kintamojo vertės pakeitimas
+// 3. Riestiniai skliaustai - {}
+
+// for (kintamasis; sąlyga; kintamojo keitimas) {
+
+//   }
+
+for (let i = 1; i <= 20; i++) {
+  console.log("-" + i + "!!!");
+}
+
+console.groupCollapsed("FizzBuzz");
+
+let ulElement = document.querySelector('ul')
+
 for (let i = 1; i <= 350; i++) {
   let output = "";
 
@@ -410,5 +561,8 @@ for (let i = 1; i <= 350; i++) {
 
   if (!output) output = i;
 
-  console.log(output);
+  let liElement = document.createElement("li");
+  liElement.textContent = output;
+
+  ulElement.append(liElement);
 }

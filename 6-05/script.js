@@ -24,3 +24,6 @@ paragraph.before(spanElement);
 spanElement.remove();
 
 console.log(spanElement);
+
+
+
