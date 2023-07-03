@@ -39,37 +39,37 @@ let playerAnswer12 = "sun";
 // - - +
 // - - -
 
-// let correctAnswer2 = 1;
-// let correctAnswer22 = 1;
-// let correctAnswer23 = 1;
+let correctAnswer2 = 1;
+let correctAnswer22 = 1;
+let correctAnswer23 = 1;
 
-// let playerAnswer2 = 1;
-// let playerAnswer22 = 1;
-// let playerAnswer23 = 2;
+let playerAnswer2 = 1;
+let playerAnswer22 = 1;
+let playerAnswer23 = 2;
 
-// let answer2 = playerAnswer2 === correctAnswer2;
-// let answer22 = playerAnswer22 === correctAnswer22;
-// let answer23 = playerAnswer23 === correctAnswer23;
+let answer2 = playerAnswer2 === correctAnswer2;
+let answer22 = playerAnswer22 === correctAnswer22;
+let answer23 = playerAnswer23 === correctAnswer23;
 
-// let successMessage = "patekai i kita lygi!";
-// let failMessage = "nepatekai i kita lygi...";
+let successMessage = "patekai i kita lygi!";
+let failMessage = "nepatekai i kita lygi...";
 
-// let output = "";
+let output = "";
 
-// if (answer2 && answer22 & answer23) {
-//   output = successMessage + " visi atsakymai teisingi!";
-// } else if (answer22 && answer23) {
-//   output = successMessage + " pirmas neteisingas.";
-// } else if (answer2 && answer23) {
-//   output = successMessage + " antras atsakymas neteisingas.";
-// } else if (answer2 && answer22) {
-//   output = successMessage + " trecias atsakymas neteisingas.";
-// } else {
-//   output = "du atsakymai neteisingi, " + failMessage;
-// }
+if (answer2 && answer22 & answer23) {
+  output = successMessage + " visi atsakymai teisingi!";
+} else if (answer22 && answer23) {
+  output = successMessage + " pirmas neteisingas.";
+} else if (answer2 && answer23) {
+  output = successMessage + " antras atsakymas neteisingas.";
+} else if (answer2 && answer22) {
+  output = successMessage + " trecias atsakymas neteisingas.";
+} else {
+  output = "du atsakymai neteisingi, " + failMessage;
+}
 
-// document.querySelector("h2").textContent = output;
-// console.log(output);
+document.querySelector("h2").textContent = output;
+console.log(output);
 
 //BALU UZDUOTIS
 
@@ -145,28 +145,91 @@ switch (balai) {
 //PASISVEIKINIMAS
 
 let isLoggedIn = true;
-let personName = ", John. ";
-let time = 11;
-let isBrithday = true;
+let personName = "John. ";
+let time = 15;
+let isBrithday = false;
 
 let morning = "Good morning, ";
-let afterNoon = "Good afternoon";
+let afterNoon = "Good afternoon, ";
 let evening = "Good evening, ";
 
+let nameText = "";
 let ifLoggedIn = personName;
+let birthdayText = "";
 let birthdayWish = "Happy birthday!";
+let other = "Hello";
+
+let greetingOutput = "";
 
 if (isLoggedIn === true && isBrithday === false && time >= 12 && time < 18) {
-  output = afterNoon + personName;
-} else if (isLoggedIn === true && isBrithday && time >= 12 && time < 18) {
-  output = afterNoon + ifLoggedIn + birthdayWish;
+  output = afterNoon + ifLoggedIn;
 } else if (
   isLoggedIn === true &&
-  time >= 6 &&
-  time < 12 &&
-  isBrithday === true
+  isBrithday === true &&
+  time >= 12 &&
+  time < 18
 ) {
-  output = morning + ifLoggedIn + birthdayWish;
+  output = afterNoon + ifLoggedIn + birthdayWish;
+} else if (isLoggedIn === false && time >= 6 && time < 12) {
+  output = morning;
 }
 
 console.log(output);
+
+//2 BUDAS
+// if (time >= 5 && time < 13) {
+//   if (isLoggedIn && isBrithday) {
+//     console.log("Good morning, " + personName + " and have a great birthday!");
+//   } else if (isLoggedIn) {
+//     console.log("Good morning, " + personName);
+//   } else {
+//     console.log("Good morning");
+//   }
+// } else if (time >= 13 && time < 19) {
+//   if (isLoggedIn && isBrithday) {
+//     console.log(
+//       "Good afternoon, " + personName + " and have a great birthday!"
+//     );
+//   } else if (isLoggedIn) {
+//     console.log("Good afternoon, " + personName);
+//   } else {
+//     console.log("Good afternoon");
+//   }
+// } else if ((time >= 19 && time < 24) || (time >= 0 && time < 5)) {
+//   if (isLoggedIn && isBrithday) {
+//     console.log("Good evening, " + personName + " and have a great birthday!");
+//   } else if (isLoggedIn) {
+//     console.log("Good evening, " + personName);
+//   } else {
+//     console.log("Good evening");
+//   }
+// } else {
+//   if (isLoggedIn && isBrithday) {
+//     console.log("Hello, " + personName + " and have a great birthday!");
+//   } else if (isLoggedIn) {
+//     console.log("Hello, " + personName);
+//   } else {
+//     console.log("Hello");
+//   }
+// }
+
+//3 BUDAS
+if (time >= 5 && time < 13) {
+  greetingOutput = "Good morning";
+} else if (time >= 13 && time < 19) {
+  greetingOutput = "Good afternoon";
+} else if ((time >= 19 && time < 24) || (time >= 0 && time < 5)) {
+  greetingOutput = "Good evening";
+} else {
+  greetingOutput = "Hello";
+}
+
+if (isLoggedIn && personName) {
+  nameText = ", " + personName;
+}
+
+if (isLoggedIn && isBrithday) {
+  birthdayText = " and have a great birthday!";
+}
+
+console.log(greetingOutput + nameText + birthdayText);
