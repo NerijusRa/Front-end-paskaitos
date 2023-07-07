@@ -233,3 +233,74 @@ if (isLoggedIn && isBrithday) {
 }
 
 console.log(greetingOutput + nameText + birthdayText);
+
+//KITA UZDUOTIS
+
+let day = 4;
+
+switch (day) {
+  case 4:
+    console.log("SAVAITES DIENOS: mazasis penktadienis");
+  case 1:
+  case 2:
+  case 3:
+  case 5:
+    console.log("SAVAITES DIENOS: darbo diena");
+    break;
+  case 6:
+  case 7:
+    console.log("SAVAITES DIENOS: savaitgalis");
+    break;
+  default:
+    console.log("SAVAITES DIENOS: nesamone");
+}
+
+//AMZIAUS UZDUOTIS
+
+let age = 14;
+
+switch (age) {
+  case 0:
+    console.log("ivestas amzius yra per mazas");
+    break;
+  case 1:
+  case 2:
+  case 3:
+  case 4:
+  case 5:
+    console.log("i mokykla dar neina");
+    break;
+  case 6:
+    console.log("i mokykla tikriausiai neina, bet gali buti pradinukas");
+    break;
+  case 7:
+  case 8:
+  case 9:
+    console.log("pradinukas");
+    break;
+  case 10:
+    console.log("tikriausiai pradinej, bet gali buti ir penktokas");
+    break;
+  case 11:
+  case 12:
+  case 13:
+    console.log("pagrindine");
+    break;
+  case 14:
+    console.log("tikriausiai mokosi pagrindinej, bet gali buti ir devintokas");
+    break;
+  case 15:
+  case 16:
+  case 17:
+    console.log("gimnazija");
+    break;
+  case 18:
+    console.log("tikriausiai mokosi gimnazijoje, bet gali buti ir baiges");
+    break;
+  case 19:
+  case 20:
+    console.log("mokykla baige, nebent liko antrais ir treciais metais");
+    break;
+  default:
+    console.log("ivestas amzius yra per didelis");
+}
