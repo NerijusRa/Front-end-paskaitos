@@ -107,6 +107,7 @@ console.groupCollapsed("uzduotis FIZZZBUZZ");
 //skaicius kuris dalinasi is 3 buna fizz, dalinasi is 5 buzz, dalinasi ir is 3 ir is 5 = Fizzbuzz
 
 //PIRMAS BUDAS
+const ulElement = document.querySelector('ul')
 
 for (let i = 1; i <= 350; i++) {
   let output = "";
@@ -118,9 +119,13 @@ for (let i = 1; i <= 350; i++) {
   if (i % 11 === 0) output += "Bizz";
   if (i % 13 === 0) output += "Buff";
 
-  if (output === "") output = i;
+  if (!output) output = i;
 
   console.log(output);
+  let liElement = document.createElement("li");
+  liElement.textContent = output;
+  ulElement.append(liElement)
 }
 
 console.groupEnd();
+
