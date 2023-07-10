@@ -125,6 +125,14 @@ for (let i = 1; i <= 350; i++) {
   let liElement = document.createElement("li");
   liElement.textContent = output;
   ulElement.append(liElement)
+
+  liElement.style = `
+  color: burlywood;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  background-color: #f0f0f0;`
+
 }
 
 console.groupEnd();

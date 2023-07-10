@@ -159,7 +159,11 @@ console.log(!false); // true
 console.log(!!true); // true
 
 // IF, ELSE IF, ELSE
-let originalLight = "GrEeN";
+
+let taskSviesoforas = document.querySelector("#sviesoforas");
+let taskSviesoforasOutput = "";
+
+let originalLight = "Green";
 let light = originalLight.toLowerCase();
 
 // console.log(light === 'green');
@@ -195,14 +199,16 @@ let light = originalLight.toLowerCase();
 // OR (||) - operator - ar operatorius
 
 if (light === "green" || light === "Green" || light === "GREEN") {
-  console.log("Galima eiti!");
+  taskSviesoforasOutput= "Galima eiti!";
 } else if (light === "yellow") {
-  console.log("Pasiruošk");
+  taskSviesoforasOutput= "Pasiruošk";
 } else if (light === "red") {
-  console.log("STOP!");
+  taskSviesoforasOutput="STOP!";
 } else {
-  console.log("Sugedo :(");
+  taskSviesoforasOutput = 'Sugedo :(';
 }
+taskSviesoforas.textContent = taskSviesoforasOutput
+
 
 let personAge = 18;
 
@@ -356,7 +362,7 @@ task4Element.textContent = task4Output;
 // 7.3. Jeigu amžius yra 14 metai, tai parašyti: "Tikriausiai mokosi pagrindinėje, tačiau gali būti ir devintokas."
 // 7.3. Jeigu amžius yra 18 metai, tai parašyti: "Tikriausiai mokosi gimnazijoje, tačiau mokyklą gali būti ir baigęs."
 
-let age = 7;
+let age = 18;
 let ageOutput = "";
 
 if (age < 0) {
